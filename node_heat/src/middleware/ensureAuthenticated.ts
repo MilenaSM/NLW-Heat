@@ -14,7 +14,10 @@ export function ensureAuthenticated(request: Request, response: Response, next: 
     });
   }
 
-
+  // extrutura
+  // Bearer 281h21i381232h1i 
+  // por isso vamos desestruturar
+  // [0] Bearer [1] 281h21i381232h1i 
   const [,token ] = authToken.split(" ")
 
   try {
